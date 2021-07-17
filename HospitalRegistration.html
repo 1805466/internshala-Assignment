@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Registration Page</title>
+        <link rel="stylesheet" href="style1.css">
+    </head>
+    <body>
+        
+        <div class="container">
+            <div class="card">
+                <div class="inner-box" id="card">
+                    <div class="card-front">
+                        <h2>LOGIN</h2>
+                        
+                            <input type="email" class="input-box" placeholder="Your Email Id" required>
+                            <input type="password" class="input-box" placeholder="Password" required>
+                            <a href="HospitalBloodInfo.html"><button type="submit" class="submit-btn">Submit</button></a>
+                            <input type="checkbox"><span>Remember Me</span>
+                        
+                        <button type="button" class="btn" onclick="openRegister()">I'm New Here</button>
+                        <a href="">Forgot Password</a>
+
+                    </div>
+                    <div class="card-back">
+                        <h2>REGISTER</h2>
+                        <form>
+                            <input type="text" class="input-box" placeholder="Hospital Name" required>
+                            <input type="text" class="input-box" placeholder="Location" required>
+                            <input type="email" class="input-box" placeholder="Email ID" required>
+                            <input type="password" class="input-box" placeholder="Password" required>
+                            <input type="password" class="input-box" placeholder="Re-enter Password" required>
+                            <button type="submit" class="submit-btn">Register</button>
+                            <input type="checkbox"><span>Remember Me</span>
+                        </form>
+                        <button type="button" class="btn" onclick="openLogin()">I've an Account</button>
+                        <a href="">Forgot Password</a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            var card = document.getElementById("card");
+            function openRegister() {
+                card.style.transform = "rotateY(-180deg)";
+            }
+            function openLogin(){
+                card.style.transform = "rotateY(0deg)";
+            }
+        </script>
+    </body>
+</html>

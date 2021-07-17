@@ -1,0 +1,133 @@
+*{
+    padding:0;
+    margin:0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10x;
+    background-color: #c20404  ;
+
+}
+
+.navbar_left {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+    font-size: 30px;
+    color: #ffff;
+ 
+}
+
+.navbar_left img {
+    width: 80px;
+    height: 50px;
+
+}
+
+.navbar_right {
+    list-style: none;
+}
+
+.navbar_right li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.navbar_right li a {
+    transition: all 0.3s ease 0s;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+    color: #ffff;
+    
+}
+
+.navbar_right li a:hover {
+    color: black;
+}
+
+
+.image img {
+    width: 100%;
+    height: 400px;
+    position: relative;
+    opacity: 0.8;
+
+}
+
+.top{
+    position: absolute;
+    top:35%;
+    padding-left: 290px;
+    font-size: 50px;
+    color: #ffff;
+}
+
+.main h1 {
+    padding: 30px;
+}
+
+.container {
+    margin: 0px;
+    padding: 60px;
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 20px;
+    background-color: rgb(250, 75, 75);
+}
+
+.box {
+    height: 250px;
+    color: rgb(0, 0, 0);
+    border: none;
+    position: relative;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    box-shadow: 0 0 40px 20px rgba(0,0,0,0.26);
+  
+}
+
+.box img {
+    height: 40px;
+    width: 40px;
+    position: relative;
+    top: 10%;
+    left: 40%;
+}
+
+.box h2 {
+    
+    top: 30%;
+    left: 42%;
+    position: absolute;
+
+}
+
+.box h3 {
+    top: 50%;
+    left: 20%;
+    position: absolute;
+}
+
+.box button {
+    position: absolute;
+    margin-top: 180px;
+    margin-left: 40px;
+    border-radius: 10px;
+    background-color: red;
+    color: white;
+    border-style: none;
+    font-size: 20px;
+    padding: 10px;
+    box-shadow: 10px 10px 50px 5px rgb(224, 92, 92);
+}
+
+.box button:hover {
+    color: black;
+    background-color: rgb(250, 75, 75);
+}
